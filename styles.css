@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400; 
+    background-color: hsl(0, 0%, 95%);
+    min-height: calc(100vh - 0.1px);
+    color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    padding: 1rem;
+    max-width: 360px;
+    margin: 2rem auto;
+}
+.sedans {
+   background-color: hsl(31, 77%, 52%);
+   border-radius: 0.6rem 0.6rem 0 0;
+}
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.6rem 0.6rem;
+}
+.sedans, .suvs, .luxury {
+    padding: 2rem 3rem 4rem 3rem;
+    width: 100%;
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+img, h1 {
+    margin: 0.9rem 0;
+}
+main p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 2rem 0;
+    line-height: 1.8;
+}
+main a {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 0.75rem 2.2rem;
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+main .sedans a {
+    color:hsl(31, 77%, 52%);
+} 
+main .sedans a:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+main .suvs a {
+    color:hsl(184, 100%, 22%);
+}
+main .suvs a:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+main .luxury a {
+    color:hsl(179, 95%, 16%);
+}
+main .luxury a:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 1rem;
+    color: #000;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 600px) {
+body {
+    overflow: hidden;
+    }
+main {
+    display: flex;
+    flex-direction: row;
+    max-width: 925px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 3rem 0;
+}
+.sedans {
+    border-radius: 0.6rem 0 0 0.6rem;   
+}
+.luxury {
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+.sedans, .suvs, .luxury {
+    padding-right: 3.2rem;
+}
+main p {
+    margin: 1rem 0 6rem 0;
+}
+main a {
+    margin: 3rem 0;
+    font-weight: 700;
+}
+.attribution {
+    margin-top: 2rem;
+}
+}
